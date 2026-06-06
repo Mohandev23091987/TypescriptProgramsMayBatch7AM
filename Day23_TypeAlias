@@ -1,0 +1,113 @@
+
+// Type alias => allows you to create your own custom types 
+
+// create a custom type
+// type typename = Type;
+
+// use the custom type 
+// let varibleanme:typename = value;
+
+
+type username = string;
+let username1:username = "ravi";
+
+
+let emp1:{
+    id:number,
+    name:string,
+    salary:number
+};
+
+let emp2:{
+    id:number,
+    name:string,
+    salary:number
+};
+
+type Employee = {
+    id:number,
+    name:string,
+    salary:number
+};
+
+
+let emp3:Employee;
+let emp4:Employee;
+
+
+
+// primitive types 
+
+type Age=number;
+
+let age:Age = 23;
+let age2:Age ="Ravi";
+
+type name=string;
+let person:name = "Ravi";
+
+// objects 
+
+type Student = {
+    id:number,
+    name:string,
+    course:string
+}
+
+let student1:Student = {
+    id:101,
+    name:"Ravi",
+    course:"playwright"
+}
+
+
+let student2: {
+    id:number,
+    name:string,
+    course:string
+} = {
+    id:101,
+    name:"Ravi",
+    course:"playwright"
+} 
+
+console.log(student1)
+console.log(student2)
+
+// type alias for functions 
+
+type addFunction =  (a:number,b:number)=>number;
+
+let add:addFunction = (x,y)=>{
+    return x+y;
+};
+
+console.log(add(2,3));
+
+
+// type allias for arrays 
+type stringArray = string[];
+let fruits:stringArray = ["mango","banana"];
+
+// union types 
+
+type ID = string|number;
+let empid:ID = 123;
+let studentId:ID = "StudentID01";
+
+//literals 
+
+type status = "Pending"|"Fulfilled"|"UnFullfilled";
+let promisestatus:status = "Pending";
+
+
+
+
+
+
+
+
+
+
+
+
